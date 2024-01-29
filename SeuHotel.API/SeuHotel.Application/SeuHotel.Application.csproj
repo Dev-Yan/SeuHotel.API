@@ -11,4 +11,13 @@
     <ProjectReference Include="..\Shared.Core\Shared.Core.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Commands\" />
+    <Folder Include="DTOs\Response\" />
+    <Folder Include="DTOs\Request\" />
+    <Folder Include="Mappings\" />
+    <Folder Include="Resources\" />
+    <Folder Include="Validations\" />
+  </ItemGroup>
+
 </Project>

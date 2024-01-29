@@ -1,4 +1,5 @@
 using SeuHotel.API.Configurations;
+using SeuHotel.Infrastructure.Middleware;
 
 var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddControllers();
@@ -17,4 +18,5 @@ if (app.Environment.IsDevelopment())
 app.UseHttpsRedirection();
 app.UseAuthorization();
 app.MapControllers();
+app.UseMiddleware<OperationsPermissionMiddleware>();
 app.Run();

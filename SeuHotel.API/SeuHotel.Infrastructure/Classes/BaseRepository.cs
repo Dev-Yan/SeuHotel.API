@@ -1,6 +1,7 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using Npgsql;
 using SeuHotel.Infrastructure.Context;
+using SeuHotel.Infrastructure.Services.Interfaces;
 using Shared.Core.Classes.Interfaces;
 using System.Linq.Expressions;
 using System.Net;
@@ -11,8 +12,11 @@ public abstract class BaseRepository<M> : IRepository<M>
     where M : BaseEntity
 {
     protected SeuHotelContext _context;
-    public BaseRepository(SeuHotelContext context)
+    private readonly IUserContextValidatorService _userContextValidator;
+
+    public BaseRepository(SeuHotelContext context, IUserContextValidatorService userContextValidator)
     {
+        _userContextValidator = userContextValidator ?? throw new ArgumentNullException(nameof(userContextValidator));
         _context = context;
     }
 

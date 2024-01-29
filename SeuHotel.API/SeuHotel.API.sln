@@ -19,6 +19,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SeuHotel.Infrastructure", "
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Shared.Core", "Shared.Core\Shared.Core.csproj", "{ABDDC593-CA46-469B-B962-200B92C2AAFE}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{6626E9F9-CDFA-4A49-98E5-6AF09840196B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SeuHotel.Test", "SeuHotel.Test\SeuHotel.Test.csproj", "{62955A14-FFE5-4E2A-8312-F5A4E86ACB0A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -41,6 +45,10 @@ Global
 		{ABDDC593-CA46-469B-B962-200B92C2AAFE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{ABDDC593-CA46-469B-B962-200B92C2AAFE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{ABDDC593-CA46-469B-B962-200B92C2AAFE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{62955A14-FFE5-4E2A-8312-F5A4E86ACB0A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{62955A14-FFE5-4E2A-8312-F5A4E86ACB0A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{62955A14-FFE5-4E2A-8312-F5A4E86ACB0A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{62955A14-FFE5-4E2A-8312-F5A4E86ACB0A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -50,6 +58,7 @@ Global
 		{566EFD1D-7197-4079-8B12-E593857D43B7} = {EB11C605-1C08-43CF-AA8E-24C488CD5FBE}
 		{E0C3809A-05AE-4611-BDE8-C799C96E54EC} = {12E0929F-7554-4F01-982B-CD034D5CE63B}
 		{ABDDC593-CA46-469B-B962-200B92C2AAFE} = {51273252-5A12-4C66-AB0B-FAB7655440A2}
+		{62955A14-FFE5-4E2A-8312-F5A4E86ACB0A} = {6626E9F9-CDFA-4A49-98E5-6AF09840196B}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {0E1128DE-7D1B-4F84-BE7E-C98BCF9F6CBB}
